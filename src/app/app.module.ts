@@ -7,11 +7,13 @@ import { PrimengModule } from './primeng/primeng.module';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { MenubarComponent } from './shared/menubar/menubar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    MenubarComponent
   ],
   imports: [
     BrowserModule,
