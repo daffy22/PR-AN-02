@@ -3,6 +3,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { PrimengModule } from './primeng/primeng.module';
 
 import { AppComponent } from './app.component';
@@ -16,9 +17,10 @@ import { MenubarComponent } from './shared/menubar/menubar.component';
     MenubarComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
+    HttpClientModule,
     PrimengModule
   ],
   providers: [],
